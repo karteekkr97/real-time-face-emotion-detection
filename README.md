@@ -1,13 +1,14 @@
 # Real-Time Face & Emotion Detection
 
-## About the Project
-This project is a real-time face and emotion detection system using OpenCV and TensorFlow. It leverages computer vision and deep learning to detect human faces and classify their emotions (e.g., happy, sad, angry, neutral) from live camera feed or video input.
+## 📌 About the Project
+This application detects faces in real-time using OpenCV and deep learning models. It also identifies emotions, gender, and age while displaying a dynamically updating emotion bar chart.
 
-## Features
-- Real-time face detection using OpenCV.
-- Emotion recognition with deep learning models.
-- Support for video files and live webcam feed.
-- Easy installation and usage.
+## 🚀 Features
+- 🎭 **Real-time Emotion Detection**
+- 🧑‍🤖 **Gender & Age Estimation**
+- 📊 **Live Emotion Chart (Dark Mode)**
+- 🎥 **Webcam-Based Detection**
+- ⚡ **Fast & Lightweight**
 
 ## Installation
 ### Prerequisites
