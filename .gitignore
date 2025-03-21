@@ -1,0 +1,6 @@
+echo "venv/" >> .gitignore
+echo "*.pyd" >> .gitignore
+echo "*.dll" >> .gitignore
+echo "*.h5" >> .gitignore
+echo "*.log" >> .gitignore
+echo "__pycache__/" >> .gitignore
