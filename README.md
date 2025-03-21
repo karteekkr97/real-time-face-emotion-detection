@@ -1,3 +1,5 @@
+![stock-3](https://github.com/user-attachments/assets/a7f5fd8f-751e-4469-a322-b7c8fc8703c3)
+
 # Real-Time Face & Emotion Detection
 
 ## 📌 About the Project
