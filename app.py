@@ -6,7 +6,11 @@ app = Flask(__name__)
 
 @app.route('/detect', methods=['POST'])
 def detect_face():
-    file = request.files['image']
+    file = request.files.get('image')  # Get uploaded image
+    if not file:
+        return jsonify({'error': 'No image uploaded'}), 400
+
+    # Convert image to numpy array
     npimg = np.frombuffer(file.read(), np.uint8)
     img = cv2.imdecode(npimg, cv2.IMREAD_COLOR)
 
@@ -17,4 +21,5 @@ def detect_face():
     return jsonify({'faces_detected': len(faces)})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
+    # Set host to 0.0.0.0 and ensure it's listening on a valid port
+    app.run(host='0.0.0.0', port=10000, debug=True)
